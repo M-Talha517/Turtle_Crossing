@@ -19,8 +19,8 @@ player = Player()
 car_manager = CarManager((width // 2, height // 2))
 scoreboard = Scoreboard((-width // 2 + 20, height // 2 - 40))
 
-screen.onkey(key='Up', fun=player.up)
-screen.onkey(key='Down', fun=player.down)
+screen.onkeypress(key='Up', fun=player.up)
+screen.onkeypress(key='Down', fun=player.down)
 
 def main():
     game_is_on = True
